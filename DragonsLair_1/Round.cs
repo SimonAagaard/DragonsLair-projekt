@@ -14,20 +14,17 @@ namespace DragonsLair_1
         public Match GetMatch(string teamName1, string teamName2)
         {
             // TODO: Implement this method
-            //for (int i =0; i < matches.Count; i++)
-            {
-                //if (matches[i].FirstOpponent.Name && matches[i].SecondOpponent.Name)
-                //{
-                    return null;
-                //}
-            }
-            
+            return null;
         }
 
         public bool IsMatchesFinished()
         {
-            // TODO: Implement this method
-            return false;
+            bool Matchfinished = false;
+            foreach (Match match in matches)
+            {
+                Matchfinished = true;
+            }
+            return Matchfinished;  
         }
 
         public List<Team> GetWinningTeams()
