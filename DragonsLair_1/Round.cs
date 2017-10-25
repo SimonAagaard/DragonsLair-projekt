@@ -13,7 +13,10 @@ namespace DragonsLair_1
 
         public Match GetMatch(string teamName1, string teamName2)
         {
-            // TODO: Implement this method
+            //for (int i = 0; i < matches.Count;i++)
+            //{
+            //    if(matches[i].FirstOpponent.Name && matches[i].SecondOpponent.Name)
+            //}
 
             return null;
         }
