@@ -61,5 +61,12 @@ namespace DragonsLair_1
             }
             Assert.AreEqual(true, matchesFinished);
         }
+        [TestMethod]
+
+        public void CheckForNewRound()
+        {
+            //Controller controller = new Controller();
+            //controller.ScheduleNewRound(printNewMatches) = true;
+        }
     }
 }
