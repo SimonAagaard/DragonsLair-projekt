@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace DragonsLair_1
 {
@@ -83,6 +84,16 @@ namespace DragonsLair_1
                 r.AddMatch(match1);
             }
             return r;
+        }
+
+        internal void SetStatus(string v)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void Add(Round newRound)
+        {
+            throw new NotImplementedException();
         }
     }
 }

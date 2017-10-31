@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace DragonsLair_1
 {
     public class Round
     {
         private List<Match> matches = new List<Match>();
-        
+        private Team FreeRider;
         public void AddMatch(Match m)
         {
             matches.Add(m);
@@ -28,7 +29,7 @@ namespace DragonsLair_1
             {
                 Matchfinished = true;
             }
-            return Matchfinished;  
+            return Matchfinished;
         }
 
         public List<Team> GetWinningTeams()
@@ -41,7 +42,6 @@ namespace DragonsLair_1
                 //Her tilføjes det vindende hold til listen
                 winningTeams.Add(x.Winner);
             }
-
             return winningTeams;
         }
 
@@ -65,6 +65,16 @@ namespace DragonsLair_1
                 }
             }
             return losingTeams;
+        }
+        //Metode for FreeRider
+        internal Team GetFreeRider()
+        {
+            return FreeRider;
+        }
+        //Metode for en ny FreeRider
+        internal void Add(Team newFreeRider)
+        {
+            FreeRider = newFreeRider;
         }
     }
 }
